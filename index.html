@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#09070e">
+<meta name="description" content="Ethical Hoops (EH27) — Roblox basketball, built different.">
+<title>Ethical Hoops — EH27</title>
+<style>
+:root{--bg:#09070e;--panel:#12101a;--panel2:#191522;--purple:#8c3dff;--lav:#c4a0ff;--silver:#ded9e9;--muted:#a6a0b5;--line:#ffffff17}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#f7f3ff;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{height:74px;border-bottom:1px solid var(--line);background:#09070eeF;position:sticky;top:0;z-index:10;backdrop-filter:blur(15px)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:950;letter-spacing:.09em}.logo{display:grid;place-items:center;width:43px;height:43px;border-radius:12px;background:linear-gradient(140deg,#9b52ff,#32145b);border:1px solid #d3b1ff66;box-shadow:0 0 22px #812cff30}.brand small{display:block;font-size:9px;color:#aaa1bb;letter-spacing:.22em;margin-top:3px}.navlinks{display:flex;gap:24px;color:#c7c0d4;font-size:12px;font-weight:750}.navlinks a:hover{color:var(--lav)}.button{display:inline-flex;justify-content:center;align-items:center;gap:8px;border-radius:10px;padding:13px 17px;background:linear-gradient(110deg,#a15aff,#7128d9);border:1px solid #d4b7ff55;font-size:12px;font-weight:900;transition:.2s}.button:hover{filter:brightness(1.12);transform:translateY(-1px)}.button.ghost{background:#ffffff08;border-color:#ffffff25}
+.breadcrumb{padding:22px 0 15px;color:#91899f;font-size:11px}.breadcrumb b{color:#c6a4ff}
+.gamehero{position:relative;overflow:hidden;border:1px solid #b277ff30;border-radius:20px;background:radial-gradient(ellipse at 78% 15%,#8d38ff4b,transparent 35%),radial-gradient(ellipse at 12% 90%,#3a1b5c60,transparent 40%),linear-gradient(120deg,#171020,#0c0912 65%);min-height:300px;padding:38px;display:flex;align-items:end}.gamehero:before{content:"EH27";position:absolute;right:0;top:-25px;font-size:clamp(130px,25vw,280px);font-weight:1000;letter-spacing:-.11em;color:#ffffff06;-webkit-text-stroke:1px #c7a0ff18}.court{position:absolute;right:7%;top:12%;width:210px;height:210px;border-radius:50%;border:2px solid #b98aff36;box-shadow:0 0 65px #8b35ff21,inset 0 0 45px #8b35ff15}.court:before{content:"";position:absolute;inset:22%;border:2px solid #b98aff45;border-radius:50%}.court:after{content:"";position:absolute;left:49%;top:0;bottom:0;border-left:2px solid #b98aff45;transform:rotate(35deg)}.hero-content{position:relative;z-index:1;max-width:620px}.pill{display:inline-flex;align-items:center;gap:7px;padding:7px 10px;border-radius:99px;border:1px solid #b47aff55;background:#8b35ff17;color:#d9c1ff;font-size:10px;font-weight:900;letter-spacing:.13em}.pill i{width:6px;height:6px;background:#b78aff;border-radius:50%;box-shadow:0 0 10px #b78aff}.gamehero h1{font-size:clamp(40px,6vw,68px);letter-spacing:-.07em;line-height:.95;margin:18px 0 12px}.gamehero h1 span{color:var(--lav)}.gamehero p{color:#b6afc6;line-height:1.7;max-width:500px;font-size:14px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 36px}.stat{border:1px solid var(--line);border-radius:13px;background:var(--panel);padding:17px}.stat span{display:block;font-size:9px;color:#91899f;font-weight:850;letter-spacing:.14em;margin-bottom:8px}.stat strong{font-size:14px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:20px;align-items:start}.maincol{min-width:0}.side{display:grid;gap:14px}.panel{border:1px solid var(--line);border-radius:15px;background:linear-gradient(145deg,#15121d,#100e16);padding:23px;margin-bottom:16px}.panel h2{font-size:19px;letter-spacing:-.035em;margin:0 0 14px}.panel p{color:#aaa3b8;font-size:13px;line-height:1.8;margin:0}.featuregrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.feature{border:1px solid #ffffff12;border-radius:12px;background:#ffffff04;padding:16px}.feature .symbol{color:#c4a0ff;font-size:20px}.feature h3{font-size:13px;margin:10px 0 6px}.feature p{font-size:11px;line-height:1.65}.update{display:flex;gap:13px;padding:14px 0;border-top:1px solid var(--line)}.update:first-of-type{border-top:0}.update .badge{flex:none;width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:#8b35ff1d;color:#c8a6ff}.update strong{font-size:12px}.update p{font-size:11px;margin-top:4px}.side .panel{margin:0}.side h2{font-size:15px}.side .button{width:100%;margin-top:10px}.detailrow{display:flex;justify-content:space-between;gap:10px;padding:11px 0;border-top:1px solid var(--line);font-size:11px}.detailrow span{color:#928aa3}.detailrow b{text-align:right;color:#e6def3}.community{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px;border:1px solid #a76aff38;border-radius:16px;background:radial-gradient(ellipse at 80% 0%,#8b35ff24,transparent 50%),#12101a;margin:25px 0 55px}.community h2{margin:0 0 8px;font-size:22px;letter-spacing:-.04em}.community p{margin:0;color:#a9a2b7;font-size:12px;line-height:1.7}.community .button{flex:none}
+footer{border-top:1px solid var(--line);padding:23px 0;color:#827b91;font-size:10px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.foot b{color:#cfc5df;letter-spacing:.12em}
+@media(max-width:760px){.navlinks{display:none}.gamehero{padding:26px;min-height:330px}.court{width:145px;height:145px;right:5%;top:8%;opacity:.6}.gamehero h1{font-size:45px}.stats{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}.side{grid-template-columns:1fr 1fr}.community{align-items:flex-start;flex-direction:column}.community .button{width:100%}}
+@media(max-width:460px){.side{grid-template-columns:1fr}.featuregrid{grid-template-columns:1fr}.gamehero p{font-size:12px}.gamehero h1{font-size:39px}.hero-actions .button{width:100%}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#"><span class="logo">EH27</span><span>ETHICAL HOOPS<small>ROBLOX BASKETBALL</small></span></a>
+<nav class="navlinks"><a href="#overview">OVERVIEW</a><a href="#features">FEATURES</a><a href="#updates">UPDATES</a></nav>
+<a class="button" href="https://discord.gg/EfdKXx8SZ" target="_blank" rel="noopener">JOIN DISCORD ↗</a>
+</div></header>
+<main class="wrap">
+<div class="breadcrumb">GAMES &nbsp; / &nbsp; <b>ETHICAL HOOPS</b></div>
+<section class="gamehero">
+<div class="court"></div><div class="hero-content">
+<div class="pill"><i></i> IN DEVELOPMENT · EH27</div>
+<h1>ETHICAL <span>HOOPS</span></h1>
+<p>A new kind of Roblox basketball experience. Bring your skill, create your style, and help shape the future of EH27.</p>
+<div class="hero-actions"><a class="button" href="https://www.roblox.com/games/93282967820012/Ethical-Hoopz?gameSetTypeId=100000001&homePageSessionInfo=5bad9f0a-5f1a-4c7e-96fa-ba2ca34a1e57&isAd=false&newGameEnum_analyticsData=0&numberOfLoadedTiles=23&page=homePage&placeId=93282967820012&playContext=homePage&position=1&positionInRow=1&rowOnPage=151&sortPos=5&sortSubId=&universeId=10770582488" target="_blank" rel="noopener">▶ PLAY ON ROBLOX</a><a class="button ghost" href="https://discord.gg/EfdKXx8SZ" target="_blank" rel="noopener">JOIN THE COMMUNITY ↗</a></div>
+</div>
+</section>
+<div class="stats"><div class="stat"><span>GAME</span><strong>Ethical Hoops</strong></div><div class="stat"><span>CODENAME</span><strong>EH27</strong></div><div class="stat"><span>PLATFORM</span><strong>Roblox</strong></div><div class="stat"><span>STATUS</span><strong>In Development</strong></div></div>
+<div class="layout" id="overview">
+<div class="maincol">
+<section class="panel"><h2>About this game</h2><p>Ethical Hoops (EH27) is an upcoming Roblox basketball project focused on competitive gameplay, player expression, and a growing community. Follow development and community announcements to stay up to date as features are confirmed.</p></section>
+<section class="panel" id="features"><h2>What we're building</h2><div class="featuregrid">
+<div class="feature"><div class="symbol">✦</div><h3>Skill-based hoops</h3><p>Build your timing, court awareness, and playmaking to make every possession count.</p></div>
+<div class="feature"><div class="symbol">◈</div><h3>Signature style</h3><p>A style-forward experience with room for player identity and custom animations as development allows.</p></div>
+<div class="feature"><div class="symbol">⌁</div><h3>Competitive energy</h3><p>A basketball community for matchups, clips, feedback, and friendly competition.</p></div>
+<div class="feature"><div class="symbol">✧</div><h3>Community feedback</h3><p>Help the team improve EH27 by sharing ideas and feedback in the official Discord.</p></div>
+</div></section>
+<section class="panel" id="updates"><h2>Latest updates</h2>
+<div class="update"><div class="badge">01</div><div><strong>Development hub created</strong><p>The EH27 website is ready to share project information and community links.</p></div></div>
+<div class="update"><div class="badge">02</div><div><strong>Community connection</strong><p>Join Discord for development news, tester information, and announcements.</p></div></div>
+<div class="update"><div class="badge">03</div><div><strong>More details coming</strong><p>Confirmed game links, gameplay clips, and release information can be added here as they become available.</p></div></div>
+</section>
+</div>
+<aside class="side">
+<section class="panel"><h2>Quick links</h2><p>Follow Ethical Hoops and keep up with the project.</p><a class="button" href="https://discord.gg/EfdKXx8SZ" target="_blank" rel="noopener">DISCORD SERVER ↗</a><a class="button ghost" href="https://www.roblox.com/games/93282967820012/Ethical-Hoopz?gameSetTypeId=100000001&homePageSessionInfo=5bad9f0a-5f1a-4c7e-96fa-ba2ca34a1e57&isAd=false&newGameEnum_analyticsData=0&numberOfLoadedTiles=23&page=homePage&placeId=93282967820012&playContext=homePage&position=1&positionInRow=1&rowOnPage=151&sortPos=5&sortSubId=&universeId=10770582488" target="_blank" rel="noopener">ROBLOX ↗</a></section>
+<section class="panel"><h2>Game details</h2><div class="detailrow"><span>Title</span><b>Ethical Hoops</b></div><div class="detailrow"><span>Short name</span><b>EH27</b></div><div class="detailrow"><span>Genre</span><b>Basketball</b></div><div class="detailrow"><span>Platform</span><b>Roblox</b></div><div class="detailrow"><span>Availability</span><b>In development</b></div></section>
+<section class="panel"><h2>Built by the community</h2><p>Want to help test, share ideas, or follow progress? The Discord is the best place to start.</p><a class="button" href="https://discord.gg/EfdKXx8SZ" target="_blank" rel="noopener">JOIN EH27 ↗</a></section>
+</aside>
+</div>
+<div class="community"><div><h2>READY TO RUN WITH EH27?</h2><p>Join the Ethical Hoops Discord for community updates and future announcements.</p></div><a class="button" href="https://discord.gg/EfdKXx8SZ" target="_blank" rel="noopener">JOIN DISCORD ↗</a></div>
+</main>
+<footer><div class="wrap foot"><b>ETHICAL HOOPS · EH27</b><span>Unofficial project website concept. Not affiliated with Roblox Corporation.</span><span>© <span id="year"></span> Ethical Hoops</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body></html>
